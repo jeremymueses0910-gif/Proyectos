@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #2e8b57, #3cb371);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    color: #2e8b57;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: #e0e0e0;
+}
+
+/* GALERÍA */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.galeria img {
+    width: 45%;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* SERVICIOS */
+.servicios {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.servicios h2 {
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    margin: 15px auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* CONTACTO */
+.contacto {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1f5c3d;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria img {
+        width: 90%;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
